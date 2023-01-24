@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Chat Express</title>
+  </head>
+  <body>
+    <div
+      class="chat-container w-1/2 text-white mx-auto mt-10 border h-full rounded-lg"
+    >
+      <header class="flex flex-wrap bg-sky-500 p-4 items-center rounded-t-lg">
+        <h1 class="text-xl font-semibold">ChatExpress</h1>
+        <a
+          href="index.html"
+          class="btn-leave px-2 py-1 mr-2 text-sky-500 bg-white"
+          >Leave chat</a
+        >
+      </header>
+      <body class="flex flex-nowrap p h-full w-full p-0">
+        <div class="w-1/3 h-full p-3 bg-sky-500/70" id="sidebar">
+          <h3 class="text-lg">Room Name</h3>
+          <div class="p-2 my-1 text-xl bg-sky-500 w-full">
+            <span class="ml-2">JavaScript</span>
+          </div>
+          <h3 class="text-lg">Users</h3>
+          <div class="p-2 my-2 bg-sky-500 w-full">
+            <p class="">Fathoni</p>
+            <p class="text-gray-400">Zikri</p>
+          </div>
+        </div>
+        <div class="w-1/3 h-full p-3 bg-white" id="room"></div>
+      </body>
+    </div>
+  </body>
+</html>
