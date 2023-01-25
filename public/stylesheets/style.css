@@ -29,23 +29,7 @@ a {
   text-decoration: none;
 }
 
-.btn {
-  cursor: pointer;
-  padding: 5px 15px;
-  background: var(--light-color);
-  color: var(--dark-color-a);
-  border: 0;
-  font-size: 17px;
-}
-
 /* Chat Page */
-
-.chat-container {
-  max-width: 1100px;
-  background: #fff;
-  margin: 30px auto;
-  overflow: hidden;
-}
 
 .chat-form-container {
   padding: 20px 30px;

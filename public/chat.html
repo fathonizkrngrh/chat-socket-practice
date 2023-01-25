@@ -27,7 +27,7 @@
       </header>
       <main class="flex h-full">
         <div
-          class="w-1/4 px-5 pt-10 pb-16 text-lg bg-sky-500/80 overflow-y-scroll text-white"
+          class="w-1/3 md:w-1/4 px-5 pt-10 pb-16 text-lg bg-sky-500/80 overflow-y-scroll overflow-x-hidden text-white"
         >
           <h3 class="mb-3"><i class="fas fa-comments mr-1"></i> Room Name:</h3>
           <h2 class="text-xl bg-sky-600 p-2.5 mb-5" id="room-name">
@@ -41,7 +41,9 @@
             <li class="py-1">Nugroho</li>
           </ul>
         </div>
-        <div class="chat-messages w-3/4 p-10 max-h-[300px] overflow-y-scroll">
+        <div
+          class="h-full w-2/3 md:w-3/4 p-10 max-h-[300px] overflow-y overflow-x-hidden"
+        >
           <div class="p-3 bg-sky-500/20 rounded-md mb-2.5">
             <p class="text-md font-bold text-sky-500/70 mb-2">
               Brad <span class="text-gray-400 ml-1">9:12pm</span>
@@ -62,16 +64,21 @@
           </div>
         </div>
       </main>
-      <div class="chat-form-container">
-        <form id="chat-form">
+      <div class="py-5 px-8 bg-sky-500 rounded-b-lg">
+        <form id="chat-form" class="flex flex-wrap">
           <input
+            class="text-lg p-2 h-10 flex-1 rounded-l-lg"
             id="msg"
             type="text"
             placeholder="Enter Message"
             required
             autocomplete="off"
           />
-          <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+          <button
+            class="py-1 px-2 bg-gray-300 text-sky-500 border-0 text-lg rounded-r-lg"
+          >
+            <i class="fas fa-paper-plane"></i> Send
+          </button>
         </form>
       </div>
     </div>
